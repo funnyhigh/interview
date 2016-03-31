@@ -1,0 +1,272 @@
+html,body{
+	height: 100%;
+	widows: 100%;
+	overflow:hidden;
+	font-family: "微软雅黑";
+	a{
+		text-decoration: none;
+	}
+	
+}
+.wrapper{
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+	border: 1px solid #ccc;
+}
+header{
+	height:3rem;
+	width: 100%;
+	background: #CC0001;
+	p{
+		color:#fff;
+		line-height: 3rem;
+		text-align: center;
+		width:100%;
+		font-size: 16px;
+		position:relative;
+		font-family: "微软雅黑";
+		a{
+			color:#fff;
+			position: absolute;
+			right:1rem;
+			top:1rem;
+			
+		}
+		
+	}
+	
+}
+
+.banner{
+	height: 5rem;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	#oll{
+		position: absolute;
+		bottom:5px;
+	}
+	img{
+		height: 100%;
+		width: 100%;
+	}
+}
+.recommend{
+	height: 1.5rem;
+	width: 100%;
+	background: #E1E1E1;
+	line-height: 1.5rem;
+	display: -webkit-box;
+	span{
+		display:block;
+		font-size: 14px;
+		width: 50%;
+		margin-left: 2rem;
+		padding-left: 1rem;
+		background: url(../img/huo.jpg) no-repeat left top;
+		background-size:0.8rem 1.3rem;
+		
+	}
+	a{
+		display: block;
+		-webkit-box-flex:1;
+		text-align: right;
+		padding-right: 1rem;
+		font-size: 12px;
+		color: #a8a2a2;
+		
+	}
+	
+}
+footer{
+	height:3rem;
+	width: 100%;
+	background: #CC0001;
+	position: fixed;
+	left:0;
+	bottom: 0px;
+	ul{
+		width: 100%;
+		display:-webkit-box;
+		li{
+			-webkit-box-flex:1;
+			text-align: center;
+			margin: 0 0.2rem;
+		
+			a{
+				color:#fff;
+				text-decoration: none;
+				.text1{
+					
+					font-size:24px;
+					padding: 0.3rem 0;
+				}
+				p{
+					padding-bottom: 0.3rem;
+				}
+				
+			}
+			
+		
+		}
+		li:hover{
+			background: #fff;
+			
+			a{
+				color:#CC0001;
+				background: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+#main{
+	position: absolute;
+	top:9.5rem;
+	left:0;
+	bottom:3rem;
+	height: 27rem;
+	width: 100%;
+	overflow:hidden;
+}
+.content{
+	
+	.list{
+		height: 4.5rem;
+		background: #F5F3F6;
+		border-bottom: 1px solid #ccc;
+		display: -webkit-box;
+		.img{
+			height: 4.5rem;
+			padding: 0.5rem 0.5rem;
+			
+			img{
+				height: 100%;
+				width: auto;
+			}
+		}
+		.center{
+			-webkit-box-flex:1;
+			padding: 0.5rem 0rem;
+			h2{
+				height: 20px;
+				line-height: 20px;
+				font-size: 14px;
+				color: #747171;
+				overflow: hidden;
+				
+			}
+			p{
+				color:#a5a2a2;
+				height: 20px;
+				font-size: 12px;
+				line-height: 20px;
+				overflow: hidden;
+			}
+			.collect{
+				position: relative;
+				height:20px;
+				line-height: 20px;
+				font-size: 12px;
+				p{	
+					height: 20px;
+					line-height: 20px;
+					span{
+						font-size: 12px;
+						margin-right: 0.3rem;
+					}
+					a{
+						margin-right: 0.5rem;
+						display: inline-block;
+						color:#a5a2a2;
+						line-height: 20px;
+						display: inline-block;
+						line-height: 20px;
+						i{
+							display:inline-block;
+							height:18px;
+							width: 0.8rem;
+							background: url(../img/fenxiang.png) no-repeat right 0.4rem;
+							background-size: contain;
+							margin-left: 0.2rem;	
+						}
+						
+					}
+				}
+				.shcang{
+					position: absolute;
+					bottom: 0.2rem;
+					right:0.5rem;
+					p{
+						.show{
+								font-size: 12px;
+							}
+						.cang{
+								font-size: 12px;
+							}
+					
+					
+					}
+					.wx{
+						position: absolute;
+						right:0.5rem;
+						bottom:-1.8rem;
+						height: 30px;
+						width: 130px;
+	
+						a{
+							height: 1.5rem;
+							width: 1.5rem;
+							display:inline-block;
+							color: #fff;
+							font-size: 12px;
+							border-radius:50%;
+							text-align: center;
+							line-height: 1.5rem;
+							text-decoration: none;
+							padding: 0;
+							margin: 0;
+							span{
+								display: block;
+								text-align: center;
+								line-height: 1.5rem;
+								padding-left: 0.3rem;
+								color: #fff;
+							}
+							
+						}
+						/*.fx{
+							font-size: 12px;
+							text-align: center;
+							line-height: 1.5rem;
+						}*/
+						a:nth-child(1){
+							background: #60CA7F;
+						}
+						a:nth-child(2){
+							background: #F6C216;
+						}
+						a:nth-child(3){
+							background:#F95B50;
+							
+						}
+						a:nth-child(4){
+							background:#4FC9FA;
+							
+						}
+					}
+				}
+				
+			}
+		}
+		
+	}
+}
+
+.hied{
+	display: none;
+}
+.bank{
+	color: #CC0001;
+}

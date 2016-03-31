@@ -1,0 +1,170 @@
+*{
+	font-size: 0.8rem;
+	box-sizing:border-box;
+}
+#wraper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.fa-angle-left{
+	color: #fff;
+	left: 10px;
+	top: 0.4rem;
+	font-size: 1.4rem;
+}
+.hea{
+	width: 100%;
+	height: 2.6rem;
+	left: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+	background: #CC0001;
+	line-height: 2.8rem;
+	font-size: 1rem;
+}
+.title{
+	color: #fff;
+} 
+.hea h5{
+	color: #fff;
+}
+.regster{
+	right: 10px;
+	color: #fff;
+}
+.content1{
+	width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 5%;
+}
+.content1 input{
+	border: none;
+}
+.kuang{
+	width: 100%;
+    height: 2rem;
+    border: 1px solid #D0D6D9;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+.fa-envelope-o{
+    width: 1.4rem;
+    height: 1rem;
+    color: #D0D6D9;
+    margin: 0.3rem 0;
+    border-right: 1px solid #EDF0F2;
+    margin-left: 0.5rem;
+}
+.fa-key{
+	 width: 1.4rem;
+    height: 1rem;
+    color: #D0D6D9;
+    margin: 0.3rem 0;
+    border-right: 1px solid #EDF0F2;
+    margin-left: 0.5rem;
+}
+.text{
+	margin-left: 0.5rem;
+	padding-bottom: 0.2rem;
+}
+.pwd_text{
+	color: #9FA3A6;
+	padding-left:5px;
+}
+.target{
+	float: right;
+	color:#9FA3A6;
+}
+.login{
+	width:100%;
+	text-align: center;
+	padding: 0.5rem 0;
+	color: #fff;
+	background: #02B81B;
+	border: none;
+	outline: none;
+	margin-top: 1.1rem;
+	margin-bottom: 1rem;
+}
+.disc{
+	text-align: center;
+	color: #9FA3A6;
+	font-family:微软雅黑;
+	font-weight:bolder;
+	margin-bottom: 10px;
+}
+.login_way{
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #2EA7E0;
+	text-align: center;
+	color: #2EA7E4;
+	font-family:微软雅黑;
+	margin-bottom: 0.7rem;
+}
+.fa-weibo{
+	color: #CC3333;
+	font-size: 1.1rem;
+	padding-right:4px;
+}
+.red{
+	border: 1px solid #CC3333;
+	color:#CC3333;
+}
+.qq{
+	background: url(../img/penguin.png)no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 0.7rem;
+    display: inline-block;
+}
+#pwd{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #ccc;
+	display: inline-block;
+}
+#pwd2{
+	color:#9FA3A6;
+	font-weight: normal;
+}
+.check{
+	width: 0.8rem;
+	height:0.8rem;
+	position: relative;
+	background: red;
+}
+.message label input[type=checkbox]+span{
+	display: inline-block;		
+	width: 0.8rem;
+	height: 0.8rem;
+	background: #fff;
+	border: 1px solid #000;
+}
+.message label input:checked+span {
+	background:#fff; 		
+	position:relative;
+}
+.message label input:checked+span:after{
+	position: absolute;
+    content: "";
+    display: block;
+    width: 0.7rem;
+    height: 0.3rem;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-57deg);
+    top: 1px;
+    left: 0px;
+}
+.message input[type=checkbox] {
+	display: none;
+}
+	

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="interviewApp">
+<head>
+	<meta charset="UTF-8">
+	<title>面试宝典</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="./css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	 <link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" href="./css/list.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/collect.css">
+</head>
+<body>
+<div ng-controller="ctr">
+	<div ng-view>
+	
+	</div>
+	<footer>
+			<ul>
+				<li><a href="#share">
+					<span class="fa fa-home text1"></span>
+					<p>首页</p>
+				</a></li>
+				<li><a href="#list">
+					<span class="fa fa-align-justify text1"></span>
+					<p>分类</p>
+				</a></li>
+				<li><a href="#mine">
+					<span class="fa fa-user text1"></span>
+					<P>我的</P>
+				</a></li>
+				<li><a href="#collection">
+					<span class="fa fa-file text1"></span>
+					<p>收藏</p>
+				</a></li>
+				<li><a href="#history">
+					<span class="fa fa-clock-o text1"></span>
+					<P>历史</P>
+				</a></li>
+			</ul>
+		</footer>
+</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/search.js"></script>
+	
+<script src="./js/angular.min.js"></script>
+<script src="./js/angular-route.min.js"></script>
+<script>
+var myapp=angular.module("interviewApp",['ngRoute']);
+    myapp.config(["$routeProvider",function($routeProvider){
+        $routeProvider.when('/share',{
+            templateUrl:"share.html"
+        }).when('/list',{
+            templateUrl:"list.html"
+        }).when('/mine',{
+            templateUrl:"login.html"
+        }).when('/collection',{
+            templateUrl:"collect.html"
+        }).when('/history',{
+            templateUrl:"history.html"
+        }).otherwise({
+			redirectTo:"/share"
+		})
+    }]);
+    myapp.controller("ctr",['$scope',function($scope){
+        
+    }])
+</script>
+
+</body>
+</html>

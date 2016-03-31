@@ -1,0 +1,21 @@
+;(function($){
+	$("#overlay").hide();
+	$("#outerbox").hide();
+	//$("#search").popup();
+	$("#search").on("click",function(e){
+		e.preventDefault();
+		if($(this).hasClass("fa-search")){
+			$(this).removeClass("fa-search").addClass("fa-times");
+			$("#overlay").show();
+			$("#outerbox").show();
+			$("#box").on("click",".tips",function(){
+				$(this).css("background","#f8f8f8").siblings(".tips").css("background","#fff");
+			})
+		}else{
+			$(this).removeClass("fa-times").addClass("fa-search");
+			$("#overlay").hide();
+			$("#outerbox").hide();
+		}
+		
+	})
+})(jQuery)

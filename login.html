@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/mobile.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<div class="logbox">
+	<header class="hea">
+		<a href="javascript:;" class="prive posB fa fa-angle-left" ></a>
+		<a href="javascript:;" class="title">登 录</a>
+		<a href="javascript:;" class="regster posB" id="register">立即注册</a>
+	</header>
+	<div class="content1">
+				<!-- 登录的邮箱号 -->
+				<p class="kuang">
+					<span class="fa fa-envelope-o"></span>
+					<input type="email" placeholder="请输入登录邮箱" class="text">
+				</p>
+				<!-- 登录密码 -->
+				<p class="kuang">
+					<span class="fa fa-key"></span>
+					<input type="password" placeholder="请输入密码" class="text">
+				</p>
+				<div class="message">
+					<label>
+						<input type="checkbox" class="check">
+						<span class="remember"></span>
+						<b id="pwd2">记住密码</b>
+					</label>
+					
+					<a href="javascript" class="target" >忘记密码</a>
+				</div>
+				<p><button class="login">登录</button></p>
+				<p class="disc">一键授权 快速登录</p>
+				<p class="login_way"><span class="qq"></span>QQ账号直接登录</p>
+				<p class="login_way red"><span class="fa fa-weibo"></span>新浪微博账号登录</p>
+			</div>
+</div>
+		
+<!--<script src="./js/angular.min.js"></script>
+<script src="./js/angular-route.min.js"></script>
+<script>
+var myapp=angular.module("interviewApp",['ngRoute']);
+    myapp.config(["$routeProvider",function($routeProvider){
+        $routeProvider.when('/register',{
+            templateUrl:"register.html"
+        })
+    }]);
+    myapp.controller("ctr",['$scope',function($scope){
+        
+    }])
+</script>
+<script>
+$(function(){
+	$("#register").on("click",function(e){
+		e.preventDefault();
+	})
+})
+</script>-->
+<script>
+	$("#register").on("click",function(){
+		location.href="register.html"
+	})
+</script>

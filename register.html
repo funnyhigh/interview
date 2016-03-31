@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	 <link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+
+</head>
+<body>
+	<div id="wraper">
+		<header class="hea">
+			<a href="#" class="prive posB fa fa-angle-left" id="back"></a>
+			<a href="#" class="title">立即注册</a>
+			<!--<a href="#" class="regster posB">登 录</a>-->
+		</header>
+		<div class="content1">
+				<!-- 注册的邮箱号 -->
+				<p class="kuang">
+					<span class="fa fa-envelope-o"></span>
+					<input type="email" placeholder="请输入登录邮箱" class="text email">
+				</p>
+				<div class="yz">
+					<span class="icon"></span><p class="yz-email"></p>
+				</div>
+				<!-- 设置密码 -->
+				<p class="kuang">
+					<span class="fa fa-key"></span>
+					<input type="password" placeholder="请输入密码" class="text pwd">
+				</p>
+				<div class="yz">
+					<span class="icon2"></span><p class="yz-pwd"></p>
+				</div>
+				<!-- 用户名 -->
+				<p class="kuang">
+					<span class="fa fa-user"></span><b></b>
+					<input type="text" placeholder="请输入用户名称" class="text uesr">
+				</p>
+				<div class="yz">
+					<span class="icon3"></span><p class="yz-user"></p>
+				</div>
+				<!-- 输入验证码地方 -->
+				<div class="message xinxi">
+					<p class="verify"><input type="text" placeholder="请输入验证码">
+					</p>
+					<p class="tp"><img src="./img/img.png"></p>
+					<p>
+						看不清<br>
+						<a href="#">换一张</a>
+					</p>
+				</div>
+				<p><button class="login loginin">登录</button></p>
+				<p class="disc">一键授权 快速登录</p>
+				<p class="login_way"><span class="qq"></span>QQ账号直接登录</p>
+				<p class="login_way red"><span class="fa fa-weibo"></span>新浪微博账号登录</p>
+			</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script>
+	$("#back").on("click",function(){
+		location.href="index.html#/mine"
+	})
+</script>
+</body>
+</html>

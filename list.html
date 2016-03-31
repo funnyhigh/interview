@@ -1,0 +1,66 @@
+<header>
+	<p>
+		<!--<a href="javascript:;" class="fa fa-angle-left" id="backToList"></a>-->
+		分类列表
+		<a href="javascript:;" class="fa fa-search" id="search"></a>
+	</p>
+</header>
+<div class="items" id="itembox">
+	<div id="animatebox">  
+		<div id="items">
+		<p class="item1" title="Javascript">Javascript <a href="javascript:;" class="tolistview fa fa-angle-right"></a></p>
+		<p class="item1" title="css3">css3<a href="javascript:;" class="tolistview fa fa-angle-right"></a></p>
+		<p class="item1" title="HTML5">HTML5<a href="javascript:;" class="tolistview fa fa-angle-right"></a></p>
+		<p class="item1" title="php">php<a href="javascript:;" class="tolistview fa fa-angle-right"></a></p>
+		<p class="item1" title="JQuery">JQuery<a href="javascript:;" class="tolistview fa fa-angle-right"></a></p>
+	</div>
+		<!--listview start-->
+		<div id="listview">
+			<div id="listbox">
+				<div class="z_list">
+					<h4 class="z_title">请说出你选择这份工作的动机？</h4>
+					<div class="z_cont">
+						<p class="z_para">重量级问题！如果你先回答，有可能就输了，所以不要回答，你可以说：“这个问题太难回答了”“你能告诉我薪水范围吗”，大部分情况下，面试官都会卸下面具，告诉你答案，如果没有，那可能与具体职位有关，他们会给你一个范围。</p>
+						<p class="z_share">
+							<span class="share_for">分享<a href="javascript:;" class="fa fa-share"></a></span>
+							<span class="collect_for">收藏<a href="javascript:;" class="fa fa-heart-o"></a></span>
+						</p>
+					</div>
+					<a href="javascript:;" class="fa fa-angle-bottom z_forView"></a>
+				</div>
+			</div>
+	</div>
+		<!--listview end-->
+	</div>
+</div>
+<!--search start-->
+	<div id="overlay"></div>
+	<div id="outerbox">
+		<p class="se"><input type="search" placeholder="搜索"><a href="#" class="fa fa-search"></a></p>
+		<div id="box">
+			<p class="title">热门搜索</p>
+			<p class="tips">Javascript</p>
+			<p class="tips">css3</p>
+			<p class="tips">HTML5</p>
+			<p class="tips">php</p>
+			<p class="tips">JQuery</p>
+		</div>
+	</div>
+		<!--search end-->
+	<script src="js/search.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script>
+		$("#items").on("click",".item1",function(){
+			/*$(this).closest("#items").css({"left":"-100%"});
+			$(this).closest("#items").next("#listview").css({"left":"0"});		*/	
+			$("#animatebox").css({"left":"-100%"});
+			var $back='<a href="javascript:;" class="fa fa-angle-left" id="backToList"></a>';
+			$("header").children("p").append($back);
+		})
+		$("header").on("click",'#backToList',function(){
+			/*$("#items").css({"left":"0"});
+			$("#items").next("#listview").css({"left":"-100%"});*/
+			$("#animatebox").css({"left":"0"});
+			$("#backToList").remove()
+		})
+</script>

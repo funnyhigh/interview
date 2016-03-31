@@ -1,0 +1,18 @@
+.x_content{
+	width: 100%;
+	height: 100%;
+}
+.x_list{
+	padding:0.9rem 0;
+	border-bottom: 1px solid #ccc;
+	padding-left: 10px;
+}
+.x_start{
+	float:right;
+	margin-right: 10px;
+	color: #CC0001; 
+}
+.x_list .gray{
+	color: #A5A2A2;
+}
+
